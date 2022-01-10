@@ -3,6 +3,8 @@ You will be given two inputs a word and an array with words.
 You should return an array of all the anagrams or an empty array if there are none.'''
 
 def anagrams(word, words):
+    anag_list = []
     for w in words:
         if sorted(word) == sorted(w):
-            return[word, w]
+            anag_list.append(w)
+    return anag_list
