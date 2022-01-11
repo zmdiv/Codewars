@@ -1,2 +1,2 @@
 # Codewars
-Codewar CHallenges
+Codewar Challenge solutions
