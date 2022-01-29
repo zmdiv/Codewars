@@ -41,10 +41,10 @@ def rot13(message):
   
   # Solution 2 ---------
   def rot13(message):
-    root13in = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
-    root13out = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
-    root13map = dict(zip(root13in, root13out))
+    rot13in = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+    rot13out = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
+    rot13map = dict(zip(rot13in, rot13out))
     
-    new_mes = ''.join([root13map.get(s, s) for s in message])
+    new_mes = ''.join([rot13map.get(s, s) for s in message])
     
     return new_mes
