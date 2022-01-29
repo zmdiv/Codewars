@@ -48,3 +48,10 @@ def rot13(message):
     new_mes = ''.join([rot13map.get(s, s) for s in message])
     
     return new_mes
+
+# Solution 3 ---------
+from string import maketrans
+
+def rot13(message):
+  dictionary =  = maketrans("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm")
+  return message.translate(dictionary )
